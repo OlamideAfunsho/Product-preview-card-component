@@ -1,0 +1,160 @@
+*{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+}
+
+body{
+     background-color: hsl(30, 38%, 92%);
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 500;
+}
+
+.container{
+     display:flex;
+     flex-direction: row;
+     border-radius: 10px;
+     background-color: White;
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     width:100%;
+     max-width:700px;
+     height:500px;
+     
+}
+
+/* --------------COLUMN 1-------------- */
+.col-1{
+     width:350px;
+     height:500px;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
+     background-image: url('image-product-desktop.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+
+/* -----------------COLUMN 2----------------- */
+.col-2{
+     padding:40px;
+     width:350px;
+}
+.header{
+     color:hsl(212, 21%, 14%);
+     margin:15px 0;
+     font-size: 2rem;
+     font-family: 'Fraunces', serif;
+     font-weight: 700;
+     width:70%;
+     text-wrap: wrap;
+}
+.product, .para, .old-amount{
+     color:hsl(228, 12%, 48%);
+}
+.product{
+     letter-spacing: 5px;
+}
+
+.para{
+     line-height: 1.5rem;
+     margin-bottom:20px;
+     font-size:14px;
+}
+.amount{
+     margin-bottom: 2rem;
+     display:flex;
+     align-items: center;
+}
+.new-amount{
+     font-size:2rem;
+     font-family: 'Fraunces', serif;
+     font-weight:700;
+     color:hsl(158, 36%, 37%);
+}
+.old-amount{
+     margin-left:10px;
+     text-decoration: line-through;
+}
+
+.cart-link{
+     text-decoration: none;
+     background-color: hsl(158, 36%, 37%);
+     color:hsl(30, 38%, 92%);
+     padding:15px 75px;
+     border-radius: 10px;
+     margin-top: 20px;
+}
+.cart{
+     font-size:20px;
+     margin-right:10px;
+}
+.cart-link:hover{
+     background-color: hsl(158, 61%, 14%);
+     transition: background-color ease 1s;
+}
+
+
+
+/* ---------------------RESONSIVE------------------------ */
+@media  screen and (max-width:700px) {
+     body{
+          max-height:100vh;
+     }
+     .container{
+          max-width:90%;
+          height:90vh;
+          flex-direction: column;
+          
+          
+     }
+
+     .col-1{
+          
+          width:100%;
+          background-image: url('image-product-mobile.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 10px;
+          
+     }
+
+     .col-2{
+          width:100%;
+          height:70%;
+          padding:20px;
+         }
+    
+
+    .product{
+     font-size: 12px;
+    }
+    .header{
+     width:80%;
+     font-size: 1.5rem;
+    } 
+     
+     
+
+     
+}
+@media(max-width: 380px){
+     .header{
+          margin: 10px 0;
+     }
+     .cart-link{
+          padding:12px 70px;
+     }
+}
+@media(max-width: 330px){
+     .new-amount{
+          font-size: 1.5rem;
+     }
+     .cart-link{
+          padding:12px 65px;
+     }
+}
+
