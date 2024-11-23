@@ -141,12 +141,13 @@ body{
 
      
 }
+
 @media(max-width: 380px){
      .header{
           margin: 10px 0;
      }
      .cart-link{
-          padding:12px 70px;
+          padding:12px 75px;
      }
 }
 @media(max-width: 330px){
