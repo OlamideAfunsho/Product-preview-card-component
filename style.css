@@ -141,6 +141,13 @@ body{
 
      
 }
+@media(max-width: 450px){
+     .cart-link{
+          width: 85%;
+          margin-left: auto;
+          margin-right: auto;
+     }
+}
 
 @media(max-width: 380px){
      .header{
